@@ -9,9 +9,6 @@ Currently Rental bikes are introduced in many urban cities for the enhancement o
 
 The dataset contains weather information (Temperature, Humidity, Windspeed, Visibility, Dewpoint, Solar radiation, Snowfall, Rainfall), the number of bikes rented per hour and date information.
 
-
-
-
 ## Attribute Information:
 
    • Date : year-month-day
@@ -42,10 +39,6 @@ The dataset contains weather information (Temperature, Humidity, Windspeed, Visi
    
    • Functional Day - NoFunc(Non Functional Hours), Fun(Functional hours)
 
-
-
-
-
 ## Data Pipeline:
 
 ● Exploratory Data Analysis (EDA): In this part we have done some  EDA on the features to see the trend. 
@@ -53,9 +46,6 @@ The dataset contains weather information (Temperature, Humidity, Windspeed, Visi
 ● Data Processing: In this part we went through each attributes and  encoded the categorical features.
 
 ● Model Creation: Finally in this part we created the various models.  These various models are being analysed and we tried to study  various models so as to get the best performing model for our project.
-
-
-
 
 
 ## Observations:
@@ -67,11 +57,8 @@ The dataset contains weather information (Temperature, Humidity, Windspeed, Visi
 ● Observation 3: We are getting the best results from lightGBM and CatBoost.
 
 
-
-
-
 ## Conclusions:
-
-● We started with loading the data, then we did Exploratory Data Analysis (EDA), null values treatment, feature selection, encoding of categorical columns, and then model building. In all of these models, our accuracy ranges from 56% to 91%, which can be said to be good for such a large dataset. This performance could be due to various reasons like the proper pattern of data, large data, or because of the relevant features.
-
-● After performing variable importance analysis to find the most significant variables for all the models developed with the given data sets. We are getting the best results from CatBoost and LightGBM.
+● No overfitting is seen.
+● Random forest Regressor and Gradient Boosting gridsearchcv gives the highest R2 score of 98% and 95% recpectively for Train Set and 92% for Test set.
+● Feature Importance value for Random Forest and Gradient Boost are different.
+● We can deploy this model.
